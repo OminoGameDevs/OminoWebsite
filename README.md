@@ -1,0 +1,2 @@
+# OminoWebsite
+indie blog
