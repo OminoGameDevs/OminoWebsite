@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>StellAR</title>
+  <title>Omino</title>
   <meta name="Jesper Englund" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,7 +17,7 @@
     <div class="w3-bar palette-4 w3-card w3-wide">
       <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-      <a href="#game" class="w3-bar-item w3-button w3-padding-large w3-hide-small">STELLAR</a>
+      <a href="#game" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE GAME</a>
       <a href="#technology" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TECHNOLOGY</a>
       <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
       <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
@@ -26,7 +26,7 @@
 
   <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
   <div id="navDemo" class="w3-bar-block palette-4 w3-hide w3-hide-large w3-hide-medium w3-top main-font" style="margin-top:46px">
-    <a href="#game" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">STELLAR</a>
+    <a href="#game" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">THE GAME</a>
     <a href="#technology" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TECHNOLOGY</a>
     <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
@@ -38,6 +38,7 @@
     <!-- Home Section -->
     <div class="w3-container w3-center palette-1">
       <p style="font-size:78px">OMINO</p>
+      <p style="font-size:35px">Roll a cube towards a hole, assimilating other cubes along the way to overcome obstacles!</p>
     </div>
 
     <!-- The Game Section -->
@@ -45,13 +46,13 @@
       <h2 class="w3-wide header">THE GAME</h2>
       <div class="w3-row" style="margin:0px !important">
         <button class="w3-third w3-button clickable-container w3-padding-32" onclick="document.getElementById('firstModal').style.display='block'">
-          <p style="font-size:25px">Something</p>
+          <p style="font-size:25px">Unique Selling Points</p>
         </button>
         <button class="w3-third w3-button clickable-container w3-padding-32" onclick="document.getElementById('secondModal').style.display='block'">
-          <p style="font-size:25px">Someting else</p>
+          <p style="font-size:25px">Character Design</p>
         </button>
         <button class="w3-third w3-button clickable-container w3-padding-32" onclick="document.getElementById('thirdModal').style.display='block'">
-          <p style="font-size:25px">Whatever</p>
+          <p style="font-size:25px">Level and Puzzle Design</p>
         </button>
       </div>
     </div>
@@ -62,8 +63,9 @@
         <header class="w3-container palette-1 w3-center w3-padding-32">
           <span onclick="document.getElementById('firstModal').style.display='none'"
          class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-          <h2 class="w3-wide">Something</h2>
-          <p class="w3-center"><i>Additional information</i></p>
+          <h2 class="w3-wide">Unique Selling Points</h2>
+          <p class="w3-center"><i>Inspired by a Miniclip game called Bloxorz. But instead of using a fixed 2x1 block, we start with a single 1x1 cube, which can attach to other cubes forming more complex shapes. We also introduce various environment settings such as ice, doors and bridges. The strategies of problem solving in this game can be varied. Core game mechanics are unique in themselves. Abstract, yet unique and cute design aesthetic.
+            </i></p>
         </header>
         <div class="w3-container palette-2 side-padding-32">
           <p>Something more</p>
@@ -79,8 +81,16 @@
         <header class="w3-container palette-1 w3-center w3-padding-32">
           <span onclick="document.getElementById('secondModal').style.display='none'"
          class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-         <h2 class="w3-wide">Something Else</h2>
-         <p class="w3-center"><i>Additional information</i></p>
+         <h2 class="w3-wide">Character Design</h2>
+         <p class="w3-center"><i>Minimalist to fit the rest of the aesthetics
+
+          Simple animations - floating around in the cube, eyes blinking every now and then
+          
+          Facing the direction of movement
+          </i></p>
+          <div class="mySlides zeropad">
+            <img class="zeropad" src="images/omino_3.png" style="width:100%">
+          </div>
         </header>
         <div class="w3-container palette-2 side-padding-32">
           <p>Something more</p>
@@ -96,8 +106,16 @@
         <header class="w3-container palette-1 w3-center w3-padding-32">
           <span onclick="document.getElementById('thirdModal').style.display='none'"
          class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-          <h2 class="w3-wide">Whatever</h2>
-          <p class="w3-center"><i>Additional information</i></p>
+          <h2 class="w3-wide">Level and Puzzle Design</h2>
+          <p class="w3-center"><i>Start easy, introducing the mechanics one-by-one
+
+            Let players explore without being told what to do.
+            
+            
+            Levels are not overly long, focusing on one or a few mechanics / puzzles.
+            
+            
+            Three or more cubes is HARD.</i></p>
         </header>
         <div class="w3-container palette-2 side-padding-32">
           <p>Whatever more</p>
@@ -113,7 +131,7 @@
       <div class="zeropad" style="margin:0px !important">
         <div class="w3-display-container" style="margin:0px !important">
           <div class="mySlides zeropad">
-            <img class="zeropad" src="images/more.png" style="width:100%">
+            <img class="zeropad" src="images/omino_1.png" style="width:100%">
             <h1 class="w3-display-topmiddle">Img header 1</h1>
           </div>
           <div class="mySlides zeropad">
@@ -129,7 +147,38 @@
     <!-- The About Us Section -->
     <div class="w3-container w3-center palette-2 main-font l12" style="width:100% !important; padding:0px" id="aboutus">
       <h2 class="w3-wide header">ABOUT US</h2>
+      <p class="w3-center"><i>
+
+        <div class="row" id="topic-row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2">
+            <img src="images/jasper.jpg" height="auto" width="100%">
+            <p class="hometext2"><strong style="color:#c13c3c;">Jesper Englund </strong><br></br>jeengl@kth.se</p>
+          </div>
+          <div class="col-xs-2">
+            <img src="images/xia.jpg" height="auto" width="100%">
+            <p class="hometext2"><strong style="color:#c13c3c;">Ziqi Xia </strong><br></br>ziqix@kth.se</p>
+          </div>
+          <div class="col-xs-2">
+            <img src="images/hannes.jpg" height="auto" width="100%">
+            <p class="hometext2"><strong style="color:#c13c3c;">Hannes Runelöv</strong><br></br>hrunelov@kth.se</p>
+          </div>
+          <div class="col-xs-2">
+            <img src="images/jiameng.jpg" height="auto" width="100%">
+            <p class="hometext2"><strong style="color:#c13c3c;">Jiameng Bian </strong><br></br>jiamengb@kth.se</p>
+          </div>
+          <div class="col-xs-2">
+            <img src="images/claudio.jpg" height="auto" width="100%">
+            <p class="hometext2"><strong style="color:#c13c3c;">Claudio Fernandez Martin</strong><br></br>clfm@kth.se</p>
+          </div>
+          <div class="col-xs-1"></div>
+        </div>
+
+      </i></p>
+
     </div>
+
+
 
     <!-- The Contact Section -->
     <div class="w3-container w3-padding-32 palette-1" style="width:100%" id="contact">
