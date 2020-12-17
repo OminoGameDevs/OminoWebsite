@@ -1,24 +1,32 @@
-.palette-1 {color:#fff !important;background-color:#443737 !important}
-.palette-1-light {color:#000 !important;background-color:#baa9a9 !important}
-.palette-1-dark {color:#fff !important;background-color:#221b1b !important}
-.p1:hover {color:#000 !important;background-color:#baa9a9 !important}
+.palette-1 {color:#fff !important;background-color:#52575d !important}
+.palette-1-light {color:#000 !important;background-color:#dbdddf !important}
+.palette-1-dark {color:#fff !important;background-color:#313437 !important}
+.p1:hover {color:#000 !important;background-color:#dbdddf !important}
 
-.palette-2 {color:#fff !important;background-color:#272121 !important}
-.palette-2-light {color:#000 !important;background-color:#aea0a0 !important}
-.palette-2-dark {color:#fff !important;background-color:#131010 !important}
+.palette-2 {color:#fff !important;background-color:#41444b !important}
+.palette-2-light {color:#000 !important;background-color:#d7d9dc !important}
+.palette-2-dark {color:#fff !important;background-color:#26282c !important}
 
 .clickable-container {margin:0px !important}
-.clickable-container:hover {color:#000 !important;background-color:#aea0a0 !important}
+.clickable-container:hover {color:#000 !important;background-color:#dbdddf !important}
 .clickable-container:active {border:0px !important; outline: 0}
 .clickable-container:focus {border:0px !important; outline: 0}
 
-.palette-3 {color:#fff !important;background-color:#ff0000 !important}
-.palette-3-light {color:#000 !important;background-color:#ff9999 !important}
-.palette-3-dark {color:#fff !important;background-color:#800000 !important}
+.palette-3 {color:#fff !important;background-color:#fddb3a !important}
+.palette-3-light {color:#000 !important;background-color:#fff8d8 !important}
+.palette-3-dark {color:#fff !important;background-color:#b99a02 !important}
 
-.palette-4 {color:#fff !important;background-color:#ff4d00 !important}
-.palette-4-light {color:#000 !important;background-color:#ffb899 !important}
-.palette-4-dark {color:#fff !important;background-color:#802600 !important}
+.exitBtn:hover {color:#000 !important;background-color:#fff8d8 !important}
+.exitBtn:active {border:0px !important; outline: 0}
+.exitBtn:focus {border:0px !important; outline: 0}
+
+.palette-4 {color:#fff !important;background-color:#fddb3a !important}
+.palette-4-light {color:#000 !important;background-color:#fff8d8 !important}
+.palette-4-dark {color:#fff !important;background-color:#b99a02 !important}
+
+.palette-5 {color:#fff !important;background-color:#f6f4e6 !important}
+.palette-5-light {color:#000 !important;background-color:#fdfdfa !important}
+.palette-5-dark {color:#fff !important;background-color:#c3b759 !important}
 
 .main-font {
   font-family: "Avenir Next" !important;
@@ -46,7 +54,7 @@
   color: #fff;
 }
 .nextbtn:hover {
-  color: #555;
+  color: #888;
   cursor:pointer;
 }
 
@@ -57,17 +65,21 @@
 
 
 .nextbtn:active {
-  color: #555;
+  color: #888;
   background-color:transparent;
   border:0px !important;
   outline: 0
 }
 
 .nextbtn:focus {
-  color: #555;
+  color: #888;
   background-color:transparent;
   border:0px !important;
   outline: 0
+}
+
+.padding-32 {
+  padding: 32px;
 }
 
 .side-padding-20 {

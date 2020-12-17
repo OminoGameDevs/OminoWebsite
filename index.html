@@ -15,44 +15,49 @@
   <!-- Navbar -->
   <div class="w3-top">
     <div class="w3-bar palette-4 w3-card w3-wide">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-      <a href="#game" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE GAME</a>
-      <a href="#technology" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TECHNOLOGY</a>
-      <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <a class="w3-bar-item w3-button exitBtn w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button exitBtn w3-padding-large">HOME</a>
+      <a href="#game" class="w3-bar-item w3-button exitBtn w3-padding-large w3-hide-small">THE GAME</a>
+      <a href="#technology" class="w3-bar-item w3-button exitBtn w3-padding-large w3-hide-small">TECHNOLOGY</a>
+      <a href="#aboutus" class="w3-bar-item w3-button exitBtn w3-padding-large w3-hide-small">ABOUT US</a>
+      <a href="#contact" class="w3-bar-item w3-button exitBtn w3-padding-large w3-hide-small">CONTACT</a>
     </div>
   </div>
 
   <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
   <div id="navDemo" class="w3-bar-block palette-4 w3-hide w3-hide-large w3-hide-medium w3-top main-font" style="margin-top:46px">
-    <a href="#game" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">THE GAME</a>
-    <a href="#technology" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TECHNOLOGY</a>
-    <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#game" class="w3-bar-item w3-button exitBtn w3-padding-large" onclick="myFunction()">THE GAME</a>
+    <a href="#technology" class="w3-bar-item w3-button exitBtn w3-padding-large" onclick="myFunction()">TECHNOLOGY</a>
+    <a href="#aboutus" class="w3-bar-item w3-button exitBtn w3-padding-large" onclick="myFunction()">ABOUT US</a>
+    <a href="#contact" class="w3-bar-item w3-button exitBtn w3-padding-large" onclick="myFunction()">CONTACT</a>
   </div>
 
   <!-- Page content -->
   <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
     <!-- Home Section -->
-    <div class="w3-container w3-center palette-1">
-      <p style="font-size:78px">OMINO</p>
-      <p style="font-size:35px">Roll a cube towards a hole, assimilating other cubes along the way to overcome obstacles!</p>
+    <div class="w3-display-container" style="margin:0px !important">
+      <div class="zeropad w3-container w3-center palette-1">
+        <p class="w3-display-middle" style="font-size:90px;margin:0px !important">OMINO</p>
+        <img src="images/first.png" class="zeropad" style="width:100%"/>
+      </div>
     </div>
 
     <!-- The Game Section -->
     <div class="w3-container w3-center palette-2 l12" style="width:100% !important; padding:0px" id="game">
       <h2 class="w3-wide header">THE GAME</h2>
       <div class="w3-row" style="margin:0px !important">
-        <button class="w3-third w3-button clickable-container w3-padding-32" onclick="document.getElementById('firstModal').style.display='block'">
-          <p style="font-size:25px">Unique Selling Points</p>
+        <button class="w3-quarter w3-button clickable-container w3-padding-32" onclick="document.getElementById('firstModal').style.display='block'">
+          <p style="font-size:25px">Overview</p>
         </button>
-        <button class="w3-third w3-button clickable-container w3-padding-32" onclick="document.getElementById('secondModal').style.display='block'">
-          <p style="font-size:25px">Character Design</p>
+        <button class="w3-quarter w3-button clickable-container w3-padding-32" onclick="document.getElementById('secondModal').style.display='block'">
+          <p style="font-size:25px">Gameplay & Mechanics</p>
         </button>
-        <button class="w3-third w3-button clickable-container w3-padding-32" onclick="document.getElementById('thirdModal').style.display='block'">
-          <p style="font-size:25px">Level and Puzzle Design</p>
+        <button class="w3-quarter w3-button clickable-container w3-padding-32" onclick="document.getElementById('thirdModal').style.display='block'">
+          <p style="font-size:25px">Game Art</p>
+        </button>
+        <button class="w3-quarter w3-button clickable-container w3-padding-32" onclick="document.getElementById('fourthModal').style.display='block'">
+          <p style="font-size:25px">Technology</p>
         </button>
       </div>
     </div>
@@ -62,13 +67,46 @@
       <div class="w3-modal-content w3-animate-top w3-card-4">
         <header class="w3-container palette-1 w3-center w3-padding-32">
           <span onclick="document.getElementById('firstModal').style.display='none'"
-         class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-          <h2 class="w3-wide">Unique Selling Points</h2>
-          <p class="w3-center"><i>Inspired by a Miniclip game called Bloxorz. But instead of using a fixed 2x1 block, we start with a single 1x1 cube, which can attach to other cubes forming more complex shapes. We also introduce various environment settings such as ice, doors and bridges. The strategies of problem solving in this game can be varied. Core game mechanics are unique in themselves. Abstract, yet unique and cute design aesthetic.
-            </i></p>
+         class="w3-button exitBtn palette-3 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Overview</h2>
+          <p class="w3-center"><i>Roll the Omino towards a hole, assimilate cubes along the way to overcome obstacles.</i></p>
         </header>
-        <div class="w3-container palette-2 side-padding-32">
-          <p>Something more</p>
+        <div class="w3-container palette-2 w3-padding-32">
+          <div class="w3-container">
+            <p>
+              <b>Concept</b><br>
+              Omino is an isometric puzzle game where the goal is to guide a cube-shaped character into a hole on a square grid.
+              The cube, known as an Omino, moves around by rolling. Along the way, the player Omino will encounter passive Ominoes.
+              The player Omino will attach itself to any passive Omino when rolled onto the tile adjacent to it (or dropped on top of it), forming a composite Omino called a Domino.
+              Later puzzles introduce more than one passive Omino, requiring the formation of Triominoes and even Tetrominoes to be solved.
+            </p>
+          </div>
+          <div class="w3-container">
+            <p>
+              <b>Inspirations</b><br>
+              Omino’s main inspiration is an old browser game called Bloxorz.
+              The mechanics and goal in Bloxorz are similar, involving rolling a block into a hole on a square grid.
+              This block always consists of two cubes, and all levels take place on a single plane.
+              Omino extends this concept by having the player start out as a single cube and be able to attach other cubes along the way,
+              as well as introducing a third dimension where the player has to roll up ledges.
+            </p>
+          </div>
+          <div class="w3-container">
+            <p>
+              <b>Target Audience</b><br>
+              The primary target audience are casual players of all ages with interest in puzzle and brain games.
+              Due to the simple interaction requiring only one finger from players as well as the possibility to pause the game flow at any time,
+              our audience can hopefully fin pockets of time in daily life with a casual yet challenging mobile game.
+            </p>
+          </div>
+          <div class="w3-container">
+            <p>
+              <b>Target Audience</b><br>
+              The basic visual style of the game keeps the principle of simplicity and consistency.
+              To be consistent with the game mechanics, the visual assets of both environment settings and characters mainly remains cube-shaped.
+              The aesthetic design aims for a simple but endearing visual experience.
+            </p>
+          </div>
         </div>
         <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="ffirst"></button>
         <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bfirst"></button>
@@ -80,20 +118,70 @@
       <div class="w3-modal-content w3-animate-top w3-card-4">
         <header class="w3-container palette-1 w3-center w3-padding-32">
           <span onclick="document.getElementById('secondModal').style.display='none'"
-         class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-         <h2 class="w3-wide">Character Design</h2>
-         <p class="w3-center"><i>Minimalist to fit the rest of the aesthetics
-
-          Simple animations - floating around in the cube, eyes blinking every now and then
-          
-          Facing the direction of movement
-          </i></p>
-          <div class="mySlides zeropad">
-            <img class="zeropad" src="images/omino_3.png" style="width:100%">
-          </div>
+         class="w3-button exitBtn palette-3 p1 w3-xlarge w3-display-topright">×</span>
+         <h2 class="w3-wide">Gameplay & Mechanics</h2>
+         <p class="w3-center"><i>Reach the goal hole in as many levels as you can or let your creativity flow building your own levels.</i></p>
         </header>
-        <div class="w3-container palette-2 side-padding-32">
-          <p>Something more</p>
+        <div class="w3-container palette-2 w3-padding-32">
+          <div class="w3-container">
+            <p>
+              <p>
+                <b style="font-size:20px">Gameplay</b><br>
+                The objective of the game is to help the cube reach the destination hole and successfully drop to the next level.
+                The game demands problem solving skills, knowledge of game mechanics, spatial reasoning, computational and algorithmic thinking.
+              </p>
+              <p>
+                <b>Progression</b><br>
+                The levels in the game contain linearly increasing complexity and challenges.
+                Players can unlock the next level and proceed ahead by solving the current puzzle.
+              </p>
+              <p>
+                <b>Keep it loose - Don’t lose</b><br>
+                To maintain the relaxing and casual characteristics of the game, this game does not have any frustrating losing conditions.
+                The number of attempts per level are unlimited.
+              </p>
+              <p>
+                <b>Level editor</b><br>
+                The game also provides the possibility for players to customize their own levels.
+                In the level editor mode, players can add any available block resources to the game scene and place them in the desired position to build their own unique puzzles.
+              </p>
+            </p>
+            <p>
+              <p>
+                <b style="font-size:20px">Mechanics</b><br>
+                During the movement towards the destination, the Omino will encounter various
+                obstacles as well as some passive blocks that can be assimilated to form some more complex shapes,
+                in order to overcome some of the aforementioned obstacles.
+              </p>
+              <p>
+                <b>Movement</b><br>
+                For the game control input, players only need to use a finger to roll the block by swiping to the desired directions on the screen of mobile devices.
+                There are several cases of invalid movement.
+                This normally happens if the next movement gets blocked by a wall or leads to falling from the edge. When the block detects an invalid position,
+                the block will roll back to the last position and get a negative sound feedback.
+              </p>
+              <p>
+                <b>Other Movement</b><br>
+                The movement pattern can be influenced by the environment.
+                Different properties of environment blocks can create some physical interactions with Omino.
+                A typical example can be the movement on the ice,
+                this will lead to a sliding motion of the Omino, instead of a roll, when there is a force applied.
+              </p>
+              <p>
+                <b>Physics</b><br>
+                The game simulates realistic physics in general.
+                The falling of blocks also follows the gravity while the rolling of
+                blocks is triggered by the force given by finger swiping from players.
+              </p>
+              <p>
+                <b>Actions</b><br>
+                <i>Switches and Buttons</i> - On some levels, there can be switches in different colors.
+                When an Omino steps on a switch, it triggers the response from a certain environment setting such as a door or a bridge with the same color as the switch.
+                <i>Attaching and Detaching Blocks</i> - Another unique mechanic in this game is the ability of Omino to assimilate other passive blocks and form complex shapes.
+                At certain environment blocks, attached blocks can also be detached from the Omino.
+              </p>
+            </p>
+          </div>
         </div>
         <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="fsecond"></button>
         <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bsecond"></button>
@@ -105,41 +193,135 @@
       <div class="w3-modal-content w3-animate-top w3-card-4">
         <header class="w3-container palette-1 w3-center w3-padding-32">
           <span onclick="document.getElementById('thirdModal').style.display='none'"
-         class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-          <h2 class="w3-wide">Level and Puzzle Design</h2>
-          <p class="w3-center"><i>Start easy, introducing the mechanics one-by-one
-
-            Let players explore without being told what to do.
-            
-            
-            Levels are not overly long, focusing on one or a few mechanics / puzzles.
-            
-            
-            Three or more cubes is HARD.</i></p>
+         class="w3-button exitBtn palette-3 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Game Art</h2>
+          <p class="w3-center"><i></i></p>
         </header>
-        <div class="w3-container palette-2 side-padding-32">
-          <p>Whatever more</p>
+        <div class="w3-container palette-2 w3-padding-32">
+          <div class="w3-container">
+            <p>
+              <b>Omino</b><br>
+              The Omino is simplistic and endearing...
+            </p>
+          </div>
         </div>
         <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="fthird"></button>
         <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bthird"></button>
       </div>
     </div>
 
+    <!-- Fourth Modal -->
+    <div id="fourthModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1 w3-center w3-padding-32">
+          <span onclick="document.getElementById('fourthModal').style.display='none'"
+         class="w3-button exitBtn palette-3 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Technology</h2>
+          <p class="w3-center"><i>Simplicity and Mobility</i></p>
+        </header>
+        <div class="w3-container palette-2 w3-padding-32">
+          <div class="w3-container">
+            <ul class="myList">
+              <li>Game Engine - <i>Unity</i></li>
+              <li>Target platforms - <i>Mobile (Android/iOS)</i></li>
+              <li>Input - <i>Touch/swipe</i></li>
+            </ul>
+          </div>
+        </div>
+        <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="ffourth"></button>
+        <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bfourth"></button>
+      </div>
+    </div>
+
     <!-- The Technology Section -->
     <div class="palette-1 w3-center w3-container zeropad" id="technology">
-      <h2 class="w3-wide header">TECHNOLOGY</h2>
+      <h2 class="w3-wide header">MEDIA</h2>
       <div class="zeropad" style="margin:0px !important">
         <div class="w3-display-container" style="margin:0px !important">
           <div class="mySlides zeropad">
-            <img class="zeropad" src="images/omino_1.png" style="width:100%">
-            <h1 class="w3-display-topmiddle">Img header 1</h1>
+            <img class="zeropad" src="images/pressBtn.png" style="width:100%">
+            <a href="http://people.kth.se/~hrunelov/stuff/omino.apk">
+              <button class="exitBtn w3-button palette-3 w3-display-middle" style="font-size:18px" onclick="">DOWNLOAD</button>
+            </a>
           </div>
-          <div class="mySlides zeropad">
-            <img class="zeropad" src="images/more.png" style="width:100%">
-            <h1 class="w3-display-topmiddle">Img header 2</h1>
+          <div class="mySlides zeropad" style="width:100%">
+            <div class="w3-row" style="margin:0px !important">
+              <div class="zeropad w3-col s12 m6 l6">
+                <img class="zeropad" src="images/onIce.png" style="width:100%">
+              </div>
+              <div class="zeropad w3-col s12 m6 l6">
+                <img class="zeropad" src="images/4fly.png" style="width:100%">
+              </div>
+              <button class="exitBtn w3-button palette-3 w3-display-middle" onclick="document.getElementById('vidModal').style.display='block'">Video Archive</button>
+            </div>
+          </div>
+          <div class="mySlides zeropad" style="width:100%">
+            <div class="w3-row" style="margin:0px !important">
+              <div class="zeropad w3-col s6 m2 l2">
+                <img class="zeropad" src="images/LevelEditor.png" style="width:100%">
+              </div>
+              <div class="zeropad w3-col s6 m2 l2">
+                <img class="zeropad" src="images/omino_3.png" style="width:100%">
+              </div>
+              <div class="zeropad w3-col s12 m4 l4">
+                <img class="zeropad" src="images/3close.png" style="width:100%">
+              </div>
+              <div class="zeropad w3-col s12 m4 l4">
+                <img class="zeropad" src="images/finWin.png" style="width:100%">
+              </div>
+              <a href="https://github.com/OminoGameDevs" target="_blank">
+                <button class="exitBtn w3-button palette-3 w3-display-middle">GitHub Repository</button>
+              </a>
+            </div>
           </div>
           <button class="w3-button palette-1 w3-display-left" onclick="plusDivs(-1)" style="margin:10px !important">&#10094;</button>
           <button class="w3-button palette-1 w3-display-right" onclick="plusDivs(1)" style="margin:10px !important">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="vidModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1 w3-center w3-padding-32">
+          <span onclick="document.getElementById('vidModal').style.display='none'"
+         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Video Archive</h2>
+        </header>
+        <div class="w3-container palette-2 w3-center zeropad">
+          <div class="w3-row zeropad">
+            <div class="w3-col s12 m6 l6 zeropad">
+              <h3 class="w3-wide">Gameplay</h3>
+              <video width="220" controls>
+                <source src="images/gpVid.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+            </div>
+            <div class="w3-col s12 m6 l6 zeropad">
+              <h3 class="w3-wide">Level Editor</h3>
+              <video width="250" controls>
+                <source src="images/editVid.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="editVidModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1 w3-center w3-padding-32">
+          <span onclick="document.getElementById('editVidModal').style.display='none'"
+         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Level Editor</h2>
+        </header>
+        <div class="w3-container palette-1 w3-center">
+          <video width="300" controls>
+            <source src="images/editVid.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
         </div>
       </div>
     </div>
@@ -149,49 +331,36 @@
       <h2 class="w3-wide header">ABOUT US</h2>
       <p class="w3-center"><i>
 
-        <div class="row" id="topic-row">
-          <div class="col-xs-1"></div>
-          <div class="col-xs-2">
-            <img src="images/jasper.jpg" height="auto" width="100%">
-            <p class="hometext2"><strong style="color:#c13c3c;">Jesper Englund </strong><br></br>jeengl@kth.se</p>
+        <div class="w3-row" id="topic-row">
+          <div class="w3-col s6 m4">
+            <img src="images/jesper.png" height="320" width="240">
+            <p class="hometext2"><strong style="color:#fdd71b;">Jesper Englund </strong></p>
+            <p>jeengl@kth.se</p>
           </div>
-          <div class="col-xs-2">
-            <img src="images/xia.jpg" height="auto" width="100%">
-            <p class="hometext2"><strong style="color:#c13c3c;">Ziqi Xia </strong><br></br>ziqix@kth.se</p>
+          <div class="w3-col s6 m4">
+            <img src="images/xia.jpg" height="320" width="240">
+            <p class="hometext2"><strong style="color:#fdd71b;">Ziqi Xia </strong></p>
+            <p>ziqix@kth.se</p>
           </div>
-          <div class="col-xs-2">
-            <img src="images/hannes.jpg" height="auto" width="100%">
-            <p class="hometext2"><strong style="color:#c13c3c;">Hannes Runelöv</strong><br></br>hrunelov@kth.se</p>
+          <div class="w3-col s6 m4">
+            <img src="images/hannes.png" height="320" width="240">
+            <p class="hometext2"><strong style="color:#fdd71b;">Hannes Runelöv</strong></p>
+            <p>hrunelov@kth.se</p>
           </div>
-          <div class="col-xs-2">
-            <img src="images/jiameng.jpg" height="auto" width="100%">
-            <p class="hometext2"><strong style="color:#c13c3c;">Jiameng Bian </strong><br></br>jiamengb@kth.se</p>
+          <div class="w3-col s6 m4">
+            <img src="images/jiameng.jpg" height="320" width="240">
+            <p class="hometext2"><strong style="color:#fdd71b;">Jiameng Bian</strong></p>
+            <p>jiamengb@kth.se</p>
           </div>
-          <div class="col-xs-2">
-            <img src="images/claudio.jpg" height="auto" width="100%">
-            <p class="hometext2"><strong style="color:#c13c3c;">Claudio Fernandez Martin</strong><br></br>clfm@kth.se</p>
+          <div class="w3-col s6 m4">
+            <img src="images/claudio.jpg" height="320" width="240">
+            <p class="hometext2"><strong style="color:#fdd71b;">Claudio Fernandez Martin</strong></p>
+            <p>clfm@kth.se</p>
           </div>
-          <div class="col-xs-1"></div>
         </div>
 
       </i></p>
 
-    </div>
-
-
-
-    <!-- The Contact Section -->
-    <div class="w3-container w3-padding-32 palette-1" style="width:100%" id="contact">
-      <h2 class="w3-wide w3-center">CONTACT</h2>
-      <p class="w3-opacity w3-center"><i>Do you want to do business?</i></p>
-      <div class="w3-display-container w3-padding-16" style="height:200px">
-        <div class="w3-display-middle w3-left" style="width:350px">
-          <div class="w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker" style="width:30px"></i> Stockholm, Sweden<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> anemailadress@kth.se<br>
-          </div>
-        </div>
-      </div>
     </div>
 
   <!-- End Page Content -->
