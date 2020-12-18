@@ -84,7 +84,7 @@ function slidemodal(current, newmodal) {
 
 function displayInfo(element){
   var percent = 0;
-  if (element.style.display=='none' || element.style.display==''){
+  if (element.style.display=='none'){
     element.style.display='block';
     var id = setInterval(frame, 1);
     function frame() {
