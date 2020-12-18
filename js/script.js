@@ -16,7 +16,6 @@ function showDivs(n) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  console.log(slideIndex);
   x[slideIndex-1].style.display = "block";
 }
 
@@ -79,6 +78,43 @@ function slidemodal(current, newmodal) {
     if (modals[i].id == modals[current].id){
       modals[newmodal].style.display = "block";
       modals[i].style.display = "none";
+    }
+  }
+}
+
+function displayInfo(element){
+  var percent = 0;
+  if (element.style.display=='none' || element.style.display==''){
+    element.style.display='block';
+    var id = setInterval(frame, 1);
+    function frame() {
+      if (percent == 25) {
+        clearInterval(id);
+      } else {
+        percent++;
+        element.style.height = percent + "%";
+        var a = percent/25;
+        element.style.color = "rgba(255,255,255," + a + ")";
+      }
+    }
+  }
+  else{
+    removeInfo(element);
+  }
+}
+
+function removeInfo(element){
+  var percent = 25;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (percent == 0) {
+      clearInterval(id);
+      element.style.display='none';
+    } else {
+      percent--;
+      element.style.height = percent + "%";
+      var a = percent/25;
+      element.style.color = "rgba(255,255,255," + a + ")";
     }
   }
 }

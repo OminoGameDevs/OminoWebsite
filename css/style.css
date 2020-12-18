@@ -102,5 +102,55 @@ ul.myList li::before {
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
+  margin-left: -1em
+}
+
+#myNav {
+  z-index: 30;
+}
+
+.tm-container{
+  width: 180px;
+  height: 300px;
+  position: relative;
+  background-color: red;
+  display:block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.profImg{
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.teamInfo{
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  background-color: rgba(185, 154, 2, 0.3);
+  z-index: 10;
+  display: none;
+}
+
+.cover{
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  z-index: 20;
+  display: block;
+  background-color:#41444b;
+}
+
+.aboutRow{
+  height: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
